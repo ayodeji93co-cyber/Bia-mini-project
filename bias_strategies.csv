@@ -1,0 +1,21 @@
+Bias_Type,Detection_Method,Mitigation_Strategy
+Gender Bias,Compare prediction rates across genders; fairness metrics like Equal Opportunity,Re-sampling underrepresented gender data; fairness constraints; adversarial debiasing
+Class Imbalance,Confusion matrix per class; imbalance ratio; precision-recall curves,SMOTE (Synthetic Minority Oversampling Technique); class weighting; focal loss
+Racial Bias,Demographic parity; disparate impact test; subgroup error analysis,Reweighting samples; adversarial training; fairness-aware preprocessing
+Age Bias,Error analysis per age group; calibration curves by age,Representation learning; stratified sampling by age groups; fairness post-processing
+Selection Bias,Analyze sampling pipeline; compare training vs. test distributions,Domain adaptation; stratified sampling; importance weighting
+Measurement Bias,Check for noisy or skewed labels; annotation consistency tests,Improve data labeling; active learning; noise-robust algorithms
+Label Bias,Compare human labels vs. ground truth; inter-rater reliability,Consensus labeling; crowdsourcing validation; calibration of annotators
+Cultural Bias,Performance testing across cultural groups; subgroup error rates,Include culturally diverse data; fairness constraints; post-hoc corrections
+Confirmation Bias,Audit feature engineering choices; cross-validation on alternative hypotheses,Blind evaluation; randomized controlled trials; model interpretation tools
+Automation Bias,Analyze decision overrides vs. model output; error audits,Human-in-the-loop design; uncertainty estimation; override mechanisms
+Historical Bias,Review dataset origin; test against current distribution,Update datasets regularly; reweight outdated samples; causal inference adjustments
+Sampling Bias,Check sample distributions vs. population; chi-square goodness-of-fit test,Stratified random sampling; oversampling rare subgroups
+Reporting Bias,Audit feature frequency; compare data coverage across sources,Encourage balanced reporting; data augmentation; source diversification
+Overfitting Bias,Training vs. validation performance gap; cross-validation,Regularization (L1/L2); dropout; early stopping
+Underfitting Bias,High bias error; poor training accuracy; residual error analysis,Increase model complexity; feature engineering; reduce constraints
+Popularity Bias,Check distribution of recommendations; exposure fairness metrics,Re-ranking algorithms; diversity constraints in recommender systems
+Temporal Bias,Performance drift analysis over time; rolling window evaluation,Time-series cross-validation; model retraining; domain adaptation
+Geographical Bias,Error breakdown by location; subgroup fairness metrics,Collect region-specific data; transfer learning; geospatial weighting
+Data Representation Bias,Feature distribution comparisons; fairness metrics per attribute,Feature rebalancing; fairness regularization; embedding debiasing
+Evaluation Bias,Compare benchmark vs. real-world datasets; fairness audit,Build representative test sets; multiple benchmark evaluations
